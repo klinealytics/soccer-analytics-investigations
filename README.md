@@ -1,1 +1,27 @@
-# Soccer analytics investigationsQuestions about soccer tactics and player skill, investigated with freepublic data. Each question has its own notebook.## Contents- `downloading_data.ipynb`: loads StatsBomb open data and checks which  competitions have 360 data- `soccer_utils.py`: shared helpers for loading and caching StatsBomb events## DataStatsBomb open data, loaded with mplsoccer's `Sbopen`. Data is cached locallyin `data/` and not included in the repo; the loaders in `soccer_utils.py`download it on first run.## Data sources and credits<img src="img/statsbomb-logo.png" alt="StatsBomb" width="180">- **[StatsBomb Open Data](https://github.com/statsbomb/open-data)**: event  and 360 data. Data provided by StatsBomb.- **[Metrica Sports sample data](https://github.com/metrica-sports/sample-data)**:  anonymised tracking and event data.- **[SkillCorner Open Data](https://github.com/SkillCorner/opendata)**:  broadcast tracking and dynamic events, 2024/25 A-League.
+# Soccer analytics investigations
+
+Questions about soccer tactics and player skill, investigated with free
+public data. Each question has its own notebook.
+
+## Contents
+
+- `downloading_data.ipynb`: loads StatsBomb open data and checks which
+  competitions have 360 data
+- `soccer_utils.py`: shared helpers for loading and caching StatsBomb events
+
+## Data
+
+StatsBomb open data, loaded with mplsoccer's `Sbopen`. Data is cached locally
+in `data/` and not included in the repo; the loaders in `soccer_utils.py`
+download it on first run.
+
+## Data sources and credits
+
+<img src="img/statsbomb-logo.png" alt="StatsBomb" width="180">
+
+- **[StatsBomb Open Data](https://github.com/statsbomb/open-data)**: event
+  and 360 data. Data provided by StatsBomb.
+- **[Metrica Sports sample data](https://github.com/metrica-sports/sample-data)**:
+  anonymised tracking and event data.
+- **[SkillCorner Open Data](https://github.com/SkillCorner/opendata)**:
+  broadcast tracking and dynamic events, 2024/25 A-League.
