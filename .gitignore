@@ -1,0 +1,10 @@
+# Cached data: large, and rebuilt by the loaders
+data/
+*.pkl
+
+# Python and Jupyter working files
+__pycache__/
+.ipynb_checkpoints/
+
+# macOS folder settings
+.DS_Store
