@@ -5,15 +5,24 @@ public data. Each question has its own notebook.
 
 ## Contents
 
-- `downloading_data.ipynb`: loads StatsBomb open data and checks which
-  competitions have 360 data
+- `downloading_data.ipynb`: downloads and quality-checks the data. Finds which
+  StatsBomb competitions have full 360 coverage, tests the cached loaders, and
+  checks the Metrica tracking files
 - `soccer_utils.py`: shared helpers for loading and caching StatsBomb events
 
 ## Data
 
-StatsBomb open data, loaded with mplsoccer's `Sbopen`. Data is cached locally
-in `data/` and not included in the repo; the loaders in `soccer_utils.py`
-download it on first run.
+Nothing in `data/` is included in the repo. To recreate it:
+
+- **StatsBomb open data** is loaded with mplsoccer's `Sbopen`. The loaders in
+  `soccer_utils.py` download it on first run and cache it in `data/`.
+- **Metrica Sports sample data** must be cloned by hand, from the repo folder:
+
+  ```bash
+  git clone --depth 1 https://github.com/metrica-sports/sample-data.git data/metrica
+  ```
+
+  Version used: commit e706dd5 (last updated 15 Apr 2021).
 
 ## Data sources and credits
 
